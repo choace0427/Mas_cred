@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+  }
+}

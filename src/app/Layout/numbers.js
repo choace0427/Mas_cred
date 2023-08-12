@@ -30,34 +30,10 @@ const data = [
 
 export default function Numbers() {
   return (
-    // <div className="bg-white px-36 py-10 md:flex block justify-between">
-    //   <div className="grid  md:grid-cols-4 grid-cols-1 gap-5">
-    // {data.map((item, index) => {
-    //   return (
-    //     <div className="flex flex-col items-center">
-    //       <div className=" h-[180px] px-30 bg-white drop-shadow-2xl flex flex-col justify-center items-center rounded-[15px]">
-    //         <img
-    //           alt="live_ico"
-    //           src={item.img}
-    //           className="w-[55px] h-[55px]"
-    //         />
-    //         <p className="text-[35px] font-normal">{item.number}</p>
-    //         <p className="text-[18px] text-[#575757] font-medium">
-    //           {item.type}
-    //         </p>
-    //       </div>
-    //       <div
-    //         style={{ background: item.color }}
-    //         className="h-[3px] w-[60px] rounded-2xl flex justify-center mt-[-1px] z-[1]"
-    //       ></div>
-    //     </div>
-    //   );
-    // })}
-    //   </div>
-    // </div>
     <div className="bg-white md:px-36 px-10 py-10">
       <div className="grid lg:grid-cols-6 grid-cols-4 gap-5">
         <div
+          data-aos="fade-right"
           style={{
             backgroundImage: `url(${bg_world.src})`,
             backgroundRepeat: "no-repeat",
@@ -73,6 +49,7 @@ export default function Numbers() {
         {data.map((item, index) => {
           return (
             <div
+              data-aos="fade-left"
               key={index}
               className=" lg:col-span-1 col-span-2 h-[180px] px-30 bg-white drop-shadow-2xl flex flex-col justify-center items-center rounded-[15px]"
             >

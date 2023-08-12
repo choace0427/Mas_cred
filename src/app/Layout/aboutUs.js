@@ -46,9 +46,13 @@ export default function AboutUs() {
           />
           <div className="bg-[#00306F] flex justify-between md:py-36 py-10 md:pl-20 px-5">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
-              <div className=" h-[350px]  flex flex-col text-white justify-center">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="300"
+                className=" h-[350px]  flex flex-col text-white justify-center"
+              >
                 <p className="text-[35px] text-white font">
-                  What our client says about us
+                  LO QUE SE DICE DE NOSOTROS
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -59,7 +63,12 @@ export default function AboutUs() {
               </div>
               {developer.map((item, index) => {
                 return (
-                  <div className=" rounded-xl  bg-white" key={index}>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    className=" rounded-xl  bg-white"
+                    key={index}
+                  >
                     <img
                       alt="michael"
                       src={item.image}

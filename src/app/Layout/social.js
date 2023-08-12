@@ -46,24 +46,25 @@ const tableData = [
 export default function Social() {
   return (
     <div className="mx-auto md:px-36 px-10 text-center py-20">
-      <span className=" md:text-[55px] text-[30px] font-semibold">
-        Mascred Social vs Otros
-      </span>
+      <div className=" md:text-[55px] text-[30px] font-semibold flex gap-3 justify-center items-center">
+        <img
+          alt="tilte"
+          src="mascred_logo.png"
+          className="md:w-min w-[150px]"
+        />{" "}
+        vs <img alt="tilte" src="otro_logo.png" className="md:w-min w-[90px]" />
+      </div>
       <table className="table-fixed border-collapse border border-slate-400 text-center w-full mt-10">
         <thead className="bg-gradient-to-b from-blue-800 via-blue-900 to-blue-800 text-white h-[130px]">
           <tr>
-            <th className="border border-slate-300 md:text-[30px] text-[14px] font-semibold">
-              Name Of The Feature
+            <th className="border border-slate-300 md:text-[30px] text-[18px] font-semibold">
+              <span>Name Of The Feature</span>
             </th>
-            <th className="border border-slate-300">
-              <div className="flex justify-center">
-                <img alt="tilte" src="mascred_logo.png" />
-              </div>
+            <th className="border border-slate-300 md:text-[30px] text-[20px] font-semibold">
+              <span>Mascred Social</span>
             </th>
-            <th className="border border-slate-300">
-              <div className="flex justify-center">
-                <img alt="tilte" src="otro_logo.png" />
-              </div>
+            <th className="border border-slate-300 md:text-[30px] text-[20px] font-semibold">
+              <span>Otros</span>
             </th>
           </tr>
         </thead>

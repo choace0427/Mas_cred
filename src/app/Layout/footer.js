@@ -34,7 +34,7 @@ export default function Footer() {
             <li>Mascred Social</li>
           </ul>
         </div>
-        <div className="bg-[#203C86]/5 p-10 space-y-4 md:w-[350px] w-[300px]">
+        <div className="bg-[#203C86]/5 p-10 space-y-4 lg:w-[300px] md:w-[280px] w-[300px]">
           <p>Subscribe</p>
           <div className="flex">
             <input

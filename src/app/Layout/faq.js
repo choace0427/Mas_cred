@@ -67,7 +67,7 @@ export default function FAQ() {
     <>
       <div className="md:px-36 px-10 bg-white py-10">
         <p className="md:text-[55px] text-[30px] font-normal text-center mb-5">
-          Frequently Aske Questions
+          PREGUNTAS FRECUENTES
         </p>
         {faqData.map((item, index) => {
           return (
@@ -75,7 +75,7 @@ export default function FAQ() {
               open={open === index + 1}
               key={index + 1}
               className={`mb-2 rounded-lg border border-blue-gray-100 px-4 py-7 ${
-                open === index + 1 ? "text-[#123123] bg-[#2E62A5]" : ""
+                open === index + 1 ? " bg-[#2E62A5] text-white" : ""
               }`}
               icon={<Icon id={index + 1} open={open} />}
             >

@@ -1,7 +1,5 @@
 "use client";
-
-import { ThemeProvider } from "@material-tailwind/react";
-
+import React, { useEffect } from "react";
 import Header from "./Layout/header";
 import Hero from "./Layout/hero";
 import Logos from "./Layout/logos";
@@ -12,9 +10,17 @@ import AboutUs from "./Layout/aboutUs";
 import Social from "./Layout/social";
 import FAQ from "./Layout/faq";
 import Footer from "./Layout/footer";
+import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
-  const customTheme = {};
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+    });
+  }, []);
+
   return (
     <>
       <div>

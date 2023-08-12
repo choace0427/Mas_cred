@@ -8,7 +8,11 @@ export default function Service() {
       </span>
       {/* <div className="md:flex justify-between text-start mt-10"> */}
       <div className="text-start grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
-        <div className=" rounded-[10px] bg-white h-[280px] p-4 flex flex-col justify-between">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className=" rounded-[10px] bg-white h-[280px] p-4 flex flex-col justify-between"
+        >
           <img
             alt="work_1"
             src="workshop_1.png"
@@ -19,7 +23,11 @@ export default function Service() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
           </p>
         </div>
-        <div className=" rounded-[10px] bg-white h-[280px] p-4 flex flex-col justify-between">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className=" rounded-[10px] bg-white h-[280px] p-4 flex flex-col justify-between"
+        >
           <img
             alt="influencer"
             src="influencer.png"
@@ -32,7 +40,11 @@ export default function Service() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
           </p>
         </div>
-        <div className=" rounded-[10px] bg-white  h-[280px] p-4 flex flex-col justify-between">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className=" rounded-[10px] bg-white  h-[280px] p-4 flex flex-col justify-between"
+        >
           <img
             alt="presentation"
             src="presentation.png"
@@ -43,7 +55,11 @@ export default function Service() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
           </p>
         </div>
-        <div className=" rounded-[10px] bg-white  h-[280px] p-4 flex flex-col justify-between">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className=" rounded-[10px] bg-white  h-[280px] p-4 flex flex-col justify-between"
+        >
           <img
             alt="consultation"
             src="consultation.png"
