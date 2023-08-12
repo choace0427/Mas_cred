@@ -1,3 +1,7 @@
+"use client";
+
+import { ThemeProvider } from "@material-tailwind/react";
+
 import Header from "./Layout/header";
 import Hero from "./Layout/hero";
 import Logos from "./Layout/logos";

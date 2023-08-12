@@ -59,7 +59,7 @@ export default function AboutUs() {
               </div>
               {developer.map((item, index) => {
                 return (
-                  <div className=" rounded-xl  bg-white">
+                  <div className=" rounded-xl  bg-white" key={index}>
                     <img
                       alt="michael"
                       src={item.image}

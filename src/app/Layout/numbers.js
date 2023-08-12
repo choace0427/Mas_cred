@@ -72,7 +72,10 @@ export default function Numbers() {
         </div>
         {data.map((item, index) => {
           return (
-            <div className=" lg:col-span-1 col-span-2 h-[180px] px-30 bg-white drop-shadow-2xl flex flex-col justify-center items-center rounded-[15px]">
+            <div
+              key={index}
+              className=" lg:col-span-1 col-span-2 h-[180px] px-30 bg-white drop-shadow-2xl flex flex-col justify-center items-center rounded-[15px]"
+            >
               <img
                 alt="live_ico"
                 src={item.img}

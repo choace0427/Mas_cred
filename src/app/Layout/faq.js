@@ -73,19 +73,25 @@ export default function FAQ() {
           return (
             <Accordion
               open={open === index + 1}
-              key={index}
+              key={index + 1}
               className={`mb-2 rounded-lg border border-blue-gray-100 px-4 py-7 ${
-                open === index + 1 ? "text-white bg-[#2E62A5]" : ""
+                open === index + 1 ? "text-[#123123] bg-[#2E62A5]" : ""
               }`}
               icon={<Icon id={index + 1} open={open} />}
             >
               <AccordionHeader
                 onClick={() => handleOpen(index + 1)}
-                className={`border-b-0 transition-colors flex`}
+                className={`border-b-0 transition-colors flex ${
+                  open === index + 1 ? "text-white" : ""
+                }`}
               >
                 {item.question}
               </AccordionHeader>
-              <AccordionBody className={`pt-0 text-base font-normal`}>
+              <AccordionBody
+                className={`pt-0 text-base font-normal ${
+                  open === index + 1 ? "text-white" : ""
+                }`}
+              >
                 {item.answer}
               </AccordionBody>
             </Accordion>

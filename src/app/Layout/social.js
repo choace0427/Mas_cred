@@ -70,7 +70,7 @@ export default function Social() {
         <tbody>
           {tableData.map((item, index) => {
             return (
-              <tr className=" h-[130px]">
+              <tr className=" h-[130px]" key={index}>
                 <td className="border border-slate-300">{item.feature}</td>
                 <td className="border border-slate-300">
                   {item.maxcred ? <Checkfeature /> : <UnCheckfeature />}
